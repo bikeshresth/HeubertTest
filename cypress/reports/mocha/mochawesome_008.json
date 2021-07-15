@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-15T15:55:45.544Z",
+    "end": "2021-07-15T15:55:59.357Z",
+    "duration": 13813,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f68f86ef-c0b0-44be-89f0-b4eb6d0b1e15",
+      "title": "",
+      "fullFile": "cypress/integration/Moxie-test/Test.Spec/TC01_Registration.spec.js",
+      "file": "cypress/integration/Moxie-test/Test.Spec/TC01_Registration.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1c23970f-5baf-49aa-b268-8fe898d7d225",
+          "title": "Registration e2e_testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Personal Details",
+              "fullTitle": "Registration e2e_testing Personal Details",
+              "timedOut": null,
+              "duration": 8775,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://heubertapp.com/\");\ncy.title().should(\"eq\", \"Luzon\");\ncy.location(\"protocol\").should(\"eq\", \"https:\");\ncy.get('input[id=\"email\"]').type(\"bikesh@heubert.com\");\ncy.get('input[id=\"first_name\"]').type(\"Bikesh\");\ncy.get('input[id=\"last_name\"]').type(\"Shrestha\");\ncy.get('input[id=\"country\"]').click();\ncy.get('input[aria-controls=\"country_list\"]').type(\"Nepa{enter}\");\ncy.get('input[id=\"city_or_state\"]').type(\"Kathmandu\");\ncy.get(\"[data-testid=submit-button]\").click();",
+              "err": {},
+              "uuid": "9e9af52e-73af-4747-9202-b33456b9a35b",
+              "parentUUID": "1c23970f-5baf-49aa-b268-8fe898d7d225",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Institution Details",
+              "fullTitle": "Registration e2e_testing Institution Details",
+              "timedOut": null,
+              "duration": 2063,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should(\"eq\", \"Luzon\");\ncy.contains(\"Institution Details\");\ncy.get('input[placeholder=\"Your institution name\"]').type(\"Heubert Technologies\");\ncy.get('input[id=\"institution-details-form_company_domain\"]').type(\"HEUB\");\ncy.get('input[ id=\"institution-details-form_position\"]').click();\ncy.contains(\"CEO\").click();\ncy.get('input[ id=\"institution-details-form_phone\"]').type(\"9899909822\");\ncy.get(\"[data-testid=submit-button]\").click();",
+              "err": {},
+              "uuid": "a97d2c54-e605-4f1f-b53f-60b0d9819aaa",
+              "parentUUID": "1c23970f-5baf-49aa-b268-8fe898d7d225",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Pricing Plan Details",
+              "fullTitle": "Registration e2e_testing Pricing Plan Details",
+              "timedOut": null,
+              "duration": 626,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should(\"eq\", \"Luzon\");\ncy.contains(\"Starter\").click();\ncy.get(\"[data-testid=submit-button]\").click();",
+              "err": {},
+              "uuid": "3031ad9a-968b-439d-a8dd-e80c84d400ce",
+              "parentUUID": "1c23970f-5baf-49aa-b268-8fe898d7d225",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Work Order Scope",
+              "fullTitle": "Registration e2e_testing Work Order Scope",
+              "timedOut": null,
+              "duration": 2276,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('input[ id=\"work-order-scope-form_feature\"]').click();\ncy.contains(\"Marketin\").click();\ncy.get('input[id=\"work-order-scope-form_number_of_employees\"]').type(\"4\");\ncy.get('input[id=\"work-order-scope-form_number_of_destination_countries\"]').type(\"4\");\ncy.get('input[id=\"work-order-scope-form_countries_operated\"]').click();\ncy.get('input[aria-controls=\"work-order-scope-form_countries_operated_list\"]').type(\"Nepa{enter}\");\ncy.get('input[id=\"work-order-scope-form_countries_operated\"]').click();\ncy.get('input[aria-controls=\"work-order-scope-form_countries_operated_list\"]').type(\"Aus{enter}\");\ncy.get(\"div.registration-layout div.ant-row.ant-row-space-around.ant-row-middle.full-height div.ant-col.ant-col-xs-23.ant-col-lg-15 div.registration-card div.ant-row > div.ant-col.ant-col-16.padding-top-4.padding-left-4.padding-right-4.padding-bottom-2:nth-child(2)\").click();\ncy.get('input[id=\"work-order-scope-form_number_of_estimates\"]').type(\"1000\");\ncy.get(\"[data-testid=submit-button]\").click();",
+              "err": {},
+              "uuid": "c8193b48-8308-49e2-b02f-87a3ad04c331",
+              "parentUUID": "1c23970f-5baf-49aa-b268-8fe898d7d225",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9e9af52e-73af-4747-9202-b33456b9a35b",
+            "a97d2c54-e605-4f1f-b53f-60b0d9819aaa",
+            "3031ad9a-968b-439d-a8dd-e80c84d400ce",
+            "c8193b48-8308-49e2-b02f-87a3ad04c331"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13740,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

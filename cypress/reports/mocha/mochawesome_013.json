@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-15T15:58:03.643Z",
+    "end": "2021-07-15T15:58:10.917Z",
+    "duration": 7274,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4485a288-724e-4d82-92d7-50c127cb6b95",
+      "title": "",
+      "fullFile": "cypress/integration/Moxie-test/Test.Spec/TC_registration.spec.js",
+      "file": "cypress/integration/Moxie-test/Test.Spec/TC_registration.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1e64e0f0-1a19-47d8-81e7-befdaffffb28",
+          "title": "Registration_First_Step",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Agent_information",
+              "fullTitle": "Registration_First_Step Agent_information",
+              "timedOut": null,
+              "duration": 7216,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://heubertapp.com/');\nvariable.email().type(\"bikesh@heubert.com\");\nvariable.firstName().type(\"Bikesh\");\nvariable.lastName().type(\"Shrestha\");\ncy.get('input[id=\"country\"]').type('Nepal').should('contain.value', 'Nepal');\ncy.get('input[id=\"city_or_state\"]').type('Kathmandu');\nvariable.nextBtn().should('be.visible').click();",
+              "err": {},
+              "uuid": "2a0a1a25-95f4-437c-947b-fce8be4f9d5d",
+              "parentUUID": "1e64e0f0-1a19-47d8-81e7-befdaffffb28",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2a0a1a25-95f4-437c-947b-fce8be4f9d5d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7216,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
