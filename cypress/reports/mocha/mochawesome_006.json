@@ -1,0 +1,202 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-15T11:40:42.447Z",
+    "end": "2021-07-15T11:41:01.215Z",
+    "duration": 18768,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e7ce793a-8886-42f1-afb0-f90abfb7d30d",
+      "title": "",
+      "fullFile": "cypress/integration/Moxie-test/Test.Spec/TC06_CheckDataExist.spec.js",
+      "file": "cypress/integration/Moxie-test/Test.Spec/TC06_CheckDataExist.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dbf6d7b6-cf61-47aa-a9e6-fbd480c2d9e3",
+          "title": "Checking if the data are available after navigating back to previous pages",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Institution Details",
+              "fullTitle": "Checking if the data are available after navigating back to previous pages Institution Details",
+              "timedOut": null,
+              "duration": 10257,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.InstitutionDetails();\ncy.CommonButton();",
+              "err": {},
+              "uuid": "eb930ade-6d86-4fcb-b145-9ee8daa7ea68",
+              "parentUUID": "dbf6d7b6-cf61-47aa-a9e6-fbd480c2d9e3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Pricing Plan Details",
+              "fullTitle": "Checking if the data are available after navigating back to previous pages Pricing Plan Details",
+              "timedOut": null,
+              "duration": 580,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.PricingPlanDetails();\ncy.CommonButton();",
+              "err": {},
+              "uuid": "1ede9298-d0cd-4a3e-b067-f177dfd7859f",
+              "parentUUID": "dbf6d7b6-cf61-47aa-a9e6-fbd480c2d9e3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Work Order Scope",
+              "fullTitle": "Checking if the data are available after navigating back to previous pages Work Order Scope",
+              "timedOut": null,
+              "duration": 2797,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.WorkOrderScope();\ncy.BackButton();",
+              "err": {},
+              "uuid": "84199d88-34ad-4ad0-83a3-cbcefafd6fdd",
+              "parentUUID": "dbf6d7b6-cf61-47aa-a9e6-fbd480c2d9e3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks Data for Pricing Plan",
+              "fullTitle": "Checking if the data are available after navigating back to previous pages Checks Data for Pricing Plan",
+              "timedOut": null,
+              "duration": 2421,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('eq', 'Luzon');\ncy.PricingPlanDetails();\ncy.wait(2000);\ncy.BackButton();",
+              "err": {},
+              "uuid": "8c3eb9e6-eeba-4539-9a13-1ba368b32c31",
+              "parentUUID": "dbf6d7b6-cf61-47aa-a9e6-fbd480c2d9e3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks Data for Instituion Page",
+              "fullTitle": "Checking if the data are available after navigating back to previous pages Checks Data for Instituion Page",
+              "timedOut": null,
+              "duration": 2382,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('eq', 'Luzon');\ncy.get('[data-testid=\"institution-details-form\"]').children().as('institution');\ncy.get('@institution').contains('Institution');\ncy.get('input').first().invoke('val').should('not.be.empty');\ncy.get('input').eq(1).invoke('val').should('not.be.empty');\ncy.get('input').last().invoke('val').should('not.be.empty');\ncy.wait(2000);\ncy.BackButton();",
+              "err": {},
+              "uuid": "69e9943d-15aa-40e6-8632-be332f631292",
+              "parentUUID": "dbf6d7b6-cf61-47aa-a9e6-fbd480c2d9e3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checks Data for Personal Details Page",
+              "fullTitle": "Checking if the data are available after navigating back to previous pages Checks Data for Personal Details Page",
+              "timedOut": null,
+              "duration": 242,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('eq', 'Luzon');\ncy.location('protocol').should('eq', 'https:');\ncy.get('[data-testid=\"personal-details-form\"]').children().as('personal');\ncy.get('@personal').contains('Country');\ncy.get('input').first().invoke('val').should('not.be.empty');\ncy.get('input').eq(1).invoke('val').should('not.be.empty');\ncy.get('input').eq(2).invoke('val').should('not.be.empty');\ncy.get('input').eq(4).invoke('val').should('not.be.empty');",
+              "err": {},
+              "uuid": "dcf178a2-1836-40fa-a27a-16d4984bb5df",
+              "parentUUID": "dbf6d7b6-cf61-47aa-a9e6-fbd480c2d9e3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eb930ade-6d86-4fcb-b145-9ee8daa7ea68",
+            "1ede9298-d0cd-4a3e-b067-f177dfd7859f",
+            "84199d88-34ad-4ad0-83a3-cbcefafd6fdd",
+            "8c3eb9e6-eeba-4539-9a13-1ba368b32c31",
+            "69e9943d-15aa-40e6-8632-be332f631292",
+            "dcf178a2-1836-40fa-a27a-16d4984bb5df"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18679,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

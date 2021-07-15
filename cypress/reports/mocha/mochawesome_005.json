@@ -1,0 +1,134 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-07-15T11:40:30.724Z",
+    "end": "2021-07-15T11:40:36.870Z",
+    "duration": 6146,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ff5a774c-2a18-417e-854d-1d448c8127e5",
+      "title": "",
+      "fullFile": "cypress/integration/Moxie-test/Test.Spec/TC05_RegistrationPageAPITesting.spec.js",
+      "file": "cypress/integration/Moxie-test/Test.Spec/TC05_RegistrationPageAPITesting.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "04fef0b7-4dfa-4eb1-930f-34b474487493",
+          "title": "API testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET - read",
+              "fullTitle": "API testing GET - read",
+              "timedOut": null,
+              "duration": 940,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('GET', '/todos/1').then(function (response) {\n  expect(response).to.have.property('status', 200);\n  expect(response.body).to.not.be[\"null\"];\n  expect(response.body.data).to.have.length(1);\n});",
+              "err": {
+                "message": "AssertionError: Target cannot be null or undefined.",
+                "estack": "AssertionError: Target cannot be null or undefined.\n    at Context.eval (https://heubertapp.com/__cypress/tests?p=cypress\\integration\\Moxie-test\\Test.Spec\\TC05_RegistrationPageAPITesting.spec.js:10:7)",
+                "diff": null
+              },
+              "uuid": "8399ddbc-cbf1-4e28-bc70-398f9aa0901e",
+              "parentUUID": "04fef0b7-4dfa-4eb1-930f-34b474487493",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "POST-create",
+              "fullTitle": "API testing POST-create",
+              "timedOut": null,
+              "duration": 5079,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var item = {\n  title: 'foo',\n  body: 'bar',\n  userId: 1\n};\ncy.request('POST', \"/posts\", item).its('body').its('data').should('deep.equal', item);",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4000ms: `cy.its()` errored because the property: `data` does not exist on your subject.\n\n`cy.its()` waited for the specified property `data` to exist, but it never did.\n\nIf you do not expect the property `data` to exist, then add an assertion such as:\n\n`cy.wrap({ foo: 'bar' }).its('quux').should('not.exist')`\n\nhttps://on.cypress.io/its",
+                "estack": "CypressError: Timed out retrying after 4000ms: `cy.its()` errored because the property: `data` does not exist on your subject.\n\n`cy.its()` waited for the specified property `data` to exist, but it never did.\n\nIf you do not expect the property `data` to exist, then add an assertion such as:\n\n`cy.wrap({ foo: 'bar' }).its('quux').should('not.exist')`\n\nhttps://on.cypress.io/its\n    at cypressErr (https://heubertapp.com/__cypress/runner/cypress_runner.js:156009:18)\n    at Object.cypressErrByPath (https://heubertapp.com/__cypress/runner/cypress_runner.js:156015:10)\n    at propertyNotOnSubjectErr (https://heubertapp.com/__cypress/runner/cypress_runner.js:137870:24)\n    at traverseObjectAtPath (https://heubertapp.com/__cypress/runner/cypress_runner.js:137951:24)\n    at getValue (https://heubertapp.com/__cypress/runner/cypress_runner.js:137999:20)\n    at tryCatcher (https://heubertapp.com/__cypress/runner/cypress_runner.js:10798:23)\n    at Function.Promise.attempt.Promise.try (https://heubertapp.com/__cypress/runner/cypress_runner.js:8072:29)\n    at retryValue (https://heubertapp.com/__cypress/runner/cypress_runner.js:138038:25)\n    at tryCatcher (https://heubertapp.com/__cypress/runner/cypress_runner.js:10798:23)\n    at Function.Promise.attempt.Promise.try (https://heubertapp.com/__cypress/runner/cypress_runner.js:8072:29)\n    at resolveValue (https://heubertapp.com/__cypress/runner/cypress_runner.js:138045:25)\n    at tryCatcher (https://heubertapp.com/__cypress/runner/cypress_runner.js:10798:23)\n    at Function.Promise.attempt.Promise.try (https://heubertapp.com/__cypress/runner/cypress_runner.js:8072:29)\n    at tryFn (https://heubertapp.com/__cypress/runner/cypress_runner.js:148807:21)\n    at whenStable (https://heubertapp.com/__cypress/runner/cypress_runner.js:148845:12)\n    at https://heubertapp.com/__cypress/runner/cypress_runner.js:148337:16\nFrom Your Spec Code:\n    at Context.eval (https://heubertapp.com/__cypress/tests?p=cypress\\integration\\Moxie-test\\Test.Spec\\TC05_RegistrationPageAPITesting.spec.js:19:64)",
+                "diff": null
+              },
+              "uuid": "97c9d836-3cc8-4a4f-9644-4c77322d897f",
+              "parentUUID": "04fef0b7-4dfa-4eb1-930f-34b474487493",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8399ddbc-cbf1-4e28-bc70-398f9aa0901e",
+            "97c9d836-3cc8-4a4f-9644-4c77322d897f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6019,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-15T11:40:05.940Z",
+    "end": "2021-07-15T11:40:20.459Z",
+    "duration": 14519,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7508eb87-48d2-4699-be1d-9ff597956b26",
+      "title": "",
+      "fullFile": "cypress/integration/Moxie-test/Test.Spec/TC04_RegistrationAlias.spec.js",
+      "file": "cypress/integration/Moxie-test/Test.Spec/TC04_RegistrationAlias.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b1d00fd7-af8e-4af9-8a0b-ec6aa33f2c4c",
+          "title": "Registration_Valid_Credentials",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Institution Details",
+              "fullTitle": "Registration_Valid_Credentials Institution Details",
+              "timedOut": null,
+              "duration": 10811,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.InstitutionDetails();\ncy.CommonButton();",
+              "err": {},
+              "uuid": "49992185-095a-4802-955a-4dfbaed8ae7e",
+              "parentUUID": "b1d00fd7-af8e-4af9-8a0b-ec6aa33f2c4c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Pricing Plan Details",
+              "fullTitle": "Registration_Valid_Credentials Pricing Plan Details",
+              "timedOut": null,
+              "duration": 571,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.PricingPlanDetails();\ncy.CommonButton();",
+              "err": {},
+              "uuid": "375f407e-1ba7-4ad0-9476-462dc3859432",
+              "parentUUID": "b1d00fd7-af8e-4af9-8a0b-ec6aa33f2c4c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Work Order Scope",
+              "fullTitle": "Registration_Valid_Credentials Work Order Scope",
+              "timedOut": null,
+              "duration": 3059,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.WorkOrderScope();\ncy.CommonButton();",
+              "err": {},
+              "uuid": "bf762a86-73df-405b-951d-e77e1232074d",
+              "parentUUID": "b1d00fd7-af8e-4af9-8a0b-ec6aa33f2c4c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "49992185-095a-4802-955a-4dfbaed8ae7e",
+            "375f407e-1ba7-4ad0-9476-462dc3859432",
+            "bf762a86-73df-405b-951d-e77e1232074d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14441,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
