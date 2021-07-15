@@ -26,7 +26,7 @@ describe('Registration e2e_testing',()=>{
         
 })
 
-    it.skip("Work Order Scope",()=>{
+    it.only("Work Order Scope",()=>{
         cy.get('input[ id="work-order-scope-form_feature"]').click()
         cy.contains('Marketin').click()
         cy.get('input[id="work-order-scope-form_number_of_employees"]').type("4")
