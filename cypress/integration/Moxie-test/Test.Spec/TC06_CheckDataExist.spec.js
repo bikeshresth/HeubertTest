@@ -50,5 +50,7 @@ describe('Checking if the data are available after navigating back to previous p
         cy.get('input').eq(1).invoke('val').should('not.be.empty')
         cy.get('input').eq(2).invoke('val').should('not.be.empty')
         cy.get('input').eq(4).invoke('val').should('not.be.empty')
+        
     })
 })
+    

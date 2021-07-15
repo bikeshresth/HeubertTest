@@ -21,6 +21,7 @@ Cypress.Commands.add('InstitutionDetails',()=>{
         cy.get('@institution').contains('Institution')
         cy.get('input').first().type("Heubert Technologies").invoke('val').should('not.be.empty')
         cy.get('input').eq(1).type('HEUB').invoke('val').should('match', /^[A-Z]+$/i)
+        cy.wait(3000)
         cy.get('input').eq(2).click()
         cy.contains('CEO').click()
         cy.get('input').last().type('9899909822').invoke('val').should('match', /^[0-9]+$/)
